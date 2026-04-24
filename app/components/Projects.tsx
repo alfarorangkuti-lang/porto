@@ -54,11 +54,11 @@ export default function Projects() {
                 </span>
                 <div className={`w-3 h-3 ${index === 0 ? 'bg-white' : 'bg-slate-900'}`}></div>
               </div>
-            <img src={project.image} className='object-contain rounded-lg h-full w-full my-4 border border-slate-300' alt="" />
+            <img src={project.image} className='object-contain rounded-lg h-full w-full my-4 ' alt="" />
               
-              <div className={'text-slate-900'}>
+              <div className={`${index === 0 ? 'text-slate-900' : 'text-white'}`}>
                 <h3 className="text-2xl font-bold mb-1">{project.title}</h3>
-                <p className={`text-sm ${index === 1 ? 'text-slate-400' : 'text-slate-500'}`}>{project.description}</p>
+                <p className={`text-sm ${index === 0 ? 'text-slate-400' : 'text-slate-500'}`}>{project.description}</p>
               </div>
             </div>
             
